@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0a2540">
+<title>Bella's 2026 Summer Voyage | 6.7 ~ 7.17</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  word-break: keep-all;
+}
+
+html, body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #1f2937;
+  background: #f4f6f9;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.02em;
+}
+
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100dvh;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.hero {
+  position: relative;
+  padding: 72px 28px 56px;
+  padding-top: calc(72px + env(safe-area-inset-top));
+  background: linear-gradient(135deg, #0a2540 0%, #1e4976 50%, #2d7dd2 100%);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+  animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-20px, 20px); }
+}
+
+.hero-label {
+  position: relative;
+  display: inline-block;
+  padding: 7px 16px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+  backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  letter-spacing: -0.03em;
+}
+
+.hero .subtitle {
+  position: relative;
+  font-size: 15px;
+  opacity: 0.92;
+  margin-bottom: 28px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.hero-stats {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.stat-box {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 14px;
+  padding: 16px 8px;
+  backdrop-filter: blur(10px);
+}
+
+.stat-num {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffd700;
+  margin-bottom: 3px;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.85;
+  letter-spacing: 1px;
+}
+
+.section {
+  padding: 48px 24px;
+}
+
+.section-title {
+  font-size: 23px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #0a2540;
+  letter-spacing: -0.03em;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+.overview {
+  background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+}
+
+.timeline-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tl-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  background: #fff;
+  border-radius: 14px;
+  border-left: 4px solid;
+  box-shadow: 0 2px 10px rgba(10,37,64,0.06);
+  min-height: 76px;
+}
+
+.tl-item.leg1 { border-left-color: #e63946; }
+.tl-item.leg2 { border-left-color: #f77f00; }
+.tl-item.leg3 { border-left-color: #2a9d8f; }
+.tl-item.leg4 { border-left-color: #7209b7; }
+.tl-item.leg5 { border-left-color: #0ea5e9; }
+.tl-item.free { border-left-color: #9ca3af; background: #f9fafb; }
+.tl-item.ny { border-left-color: #f59e0b; background: linear-gradient(180deg, #fffbeb 0%, #fff 100%); }
+
+.tl-num {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #0a2540;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  flex-shrink: 0;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+.tl-item.leg1 .tl-num { background: #e63946; }
+.tl-item.leg2 .tl-num { background: #f77f00; }
+.tl-item.leg3 .tl-num { background: #2a9d8f; }
+.tl-item.leg4 .tl-num { background: #7209b7; }
+.tl-item.leg5 .tl-num { background: #0ea5e9; }
+.tl-item.free .tl-num { background: #9ca3af; font-size: 16px; }
+.tl-item.ny .tl-num { background: #f59e0b; font-size: 16px; }
+
+.tl-content { flex: 1; min-width: 0; }
+
+.tl-date {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.tl-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0a2540;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+.tl-meta {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.legs { background: #f4f6f9; }
+
+.leg {
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 22px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(10,37,64,0.08);
+}
+
+.leg-header {
+  padding: 26px 22px 22px;
+  color: #fff;
+  position: relative;
+}
+
+.leg-header.h1 { background: linear-gradient(135deg, #e63946, #c1272d); }
+.leg-header.h2 { background: linear-gradient(135deg, #f77f00, #d62828); }
+.leg-header.h3 { background: linear-gradient(135deg, #2a9d8f, #1d7874); }
+.leg-header.h4 { background: linear-gradient(135deg, #7209b7, #4c0080); }
+.leg-header.h5 { background: linear-gradient(135deg, #0ea5e9, #0369a1); }
+.leg-header.ny { background: linear-gradient(135deg, #f59e0b, #b45309); }
+
+.leg-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(255,255,255,0.22);
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.leg-name {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 6px;
+  letter-spacing: -0.03em;
+}
+
+.leg-ship {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.95;
+  margin-bottom: 14px;
+}
+
+.leg-dates {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.leg-dates strong { font-weight: 800; }
+
+.leg-body { padding: 22px; }
+
+.info-row {
+  display: flex;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid #f0f2f5;
+  font-size: 14px;
+}
+
+.info-row:last-child { border-bottom: none; }
+
+.info-label {
+  color: #6b7280;
+  font-weight: 600;
+  min-width: 72px;
+  flex-shrink: 0;
+  font-size: 13px;
+}
+
+.info-val {
+  color: #0a2540;
+  flex: 1;
+  font-weight: 500;
+}
+
+.ports-section {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 2px dashed #e5e7eb;
+}
+
+.ports-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0a2540;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.02em;
+}
+
+.port {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.port-day {
+  width: 46px;
+  height: 46px;
+  background: #fff;
+  border: 2px solid #0a2540;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.port-day-num {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
+  color: #0a2540;
+  letter-spacing: -0.03em;
+}
+
+.port-day-lbl {
+  font-size: 8px;
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.port-info { flex: 1; min-width: 0; }
+
+.port-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 3px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+.port-date {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.port-time {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 9px;
+  background: #fff;
+  border-radius: 50px;
+  color: #0a2540;
+  font-weight: 600;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+.port-desc {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.65;
+  margin-top: 7px;
+  font-weight: 400;
+}
+
+.port-weather {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #0a7cff;
+  margin-top: 7px;
+  padding: 3px 10px;
+  background: #e8f3ff;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.port.sea { background: #e8f4fd; opacity: 0.9; }
+.port.sea .port-day { background: #0a2540; border-color: #0a2540; }
+.port.sea .port-day-num, .port.sea .port-day-lbl { color: #fff; }
+.port.highlight { background: #fef3c7; border: 2px solid #f59e0b; }
+
+.free-section {
+  background: linear-gradient(180deg, #fff 0%, #f4f6f9 100%);
+}
+
+.free-card {
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.free-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.free-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a2540;
+  letter-spacing: -0.02em;
+}
+
+.free-date {
+  font-size: 11px;
+  color: #6b7280;
+  background: #f3f4f6;
+  padding: 4px 11px;
+  border-radius: 50px;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.free-note {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+.tips-section {
+  background: #0a2540;
+  color: #fff;
+}
+
+.tips-section .section-title { color: #fff; }
+.tips-section .section-subtitle { color: rgba(255,255,255,0.7); }
+
+.tip {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 12px;
+}
+
+.tip-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 9px;
+  color: #ffd700;
+  letter-spacing: -0.02em;
+}
+
+.tip-body {
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.9);
+  font-weight: 400;
+}
+
+.footer {
+  background: #0a2540;
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 34px 20px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-logo {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 380px) {
+  .hero { padding: 48px 20px 40px; }
+  .hero h1 { font-size: 27px; }
+  .section { padding: 36px 18px; }
+  .leg-body { padding: 18px; }
+  .leg-header { padding: 22px 18px 18px; }
+  .tl-title { font-size: 14px; }
+  .section-title { font-size: 20px; }
+  .stat-num { font-size: 20px; }
+  .info-label { min-width: 64px; font-size: 12px; }
+}
+
+@media (min-width: 520px) {
+  .hero h1 { font-size: 38px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<section class="hero">
+  <div class="hero-label">✈ SUMMER VOYAGE</div>
+  <h1>Bella's<br>2026 Summer<br>Voyage</h1>
+  <p class="subtitle">4개의 크루즈 + 뉴욕 경유 + 라스베가스 호캉스<br>3개 대륙, 41일의 여정</p>
+  <div class="hero-stats">
+    <div class="stat-box">
+      <div class="stat-num">41</div>
+      <div class="stat-label">DAYS</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">4</div>
+      <div class="stat-label">CRUISES</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">PORTS</div>
+    </div>
+  </div>
+</section>
+
+<section class="section overview">
+  <h2 class="section-title">🗺️ 전체 여정</h2>
+  <p class="section-subtitle">6월 7일 바르셀로나에서 출발, 7월 17일 라스베가스에서 종료</p>
+  
+  <div class="timeline-overview">
+    <div class="tl-item leg1">
+      <div class="tl-num">1</div>
+      <div class="tl-content">
+        <div class="tl-date">6.7 SUN → 6.14 SUN · 7일</div>
+        <div class="tl-title">서지중해 크루즈</div>
+        <div class="tl-meta">🚢 Royal Caribbean · Harmony of the Seas · 바르셀로나</div>
+      </div>
+    </div>
+
+    <div class="tl-item free">
+      <div class="tl-num">✈</div>
+      <div class="tl-content">
+        <div class="tl-date">6.14 SUN</div>
+        <div class="tl-title">이동일 · 바르셀로나 → 아테네</div>
+        <div class="tl-meta">직항 약 3시간</div>
+      </div>
+    </div>
+
+    <div class="tl-item leg2">
+      <div class="tl-num">2</div>
+      <div class="tl-content">
+        <div class="tl-date">6.14 SUN → 6.24 WED · 10일</div>
+        <div class="tl-title">그리스·터키 크루즈</div>
+        <div class="tl-meta">🚢 Virgin Voyages · Scarlet Lady · 아테네</div>
+      </div>
+    </div>
+
+    <div class="tl-item leg3">
+      <div class="tl-num">3</div>
+      <div class="tl-content">
+        <div class="tl-date">6.24 WED → 7.5 SUN · 11일</div>
+        <div class="tl-title">Istanbul Delights & Santorini Dreams</div>
+        <div class="tl-meta">🚢 Virgin Voyages · Scarlet Lady · 아테네</div>
+      </div>
+    </div>
+
+    <div class="tl-item ny">
+      <div class="tl-num">🗽</div>
+      <div class="tl-content">
+        <div class="tl-date">7.5 SUN → 7.6 MON</div>
+        <div class="tl-title">뉴욕 경유 · 야경 투어</div>
+        <div class="tl-meta">아테네 → 뉴욕(하루 체류) → 마이애미</div>
+      </div>
+    </div>
+
+    <div class="tl-item leg4">
+      <div class="tl-num">4</div>
+      <div class="tl-content">
+        <div class="tl-date">7.6 MON → 7.11 SAT · 5일</div>
+        <div class="tl-title">도미니카·바하마 크루즈</div>
+        <div class="tl-meta">🚢 Virgin Voyages · Resilient Lady · 마이애미</div>
+      </div>
+    </div>
+
+    <div class="tl-item free">
+      <div class="tl-num">✈</div>
+      <div class="tl-content">
+        <div class="tl-date">7.11 SAT</div>
+        <div class="tl-title">이동일 · 마이애미 → 라스베가스</div>
+        <div class="tl-meta">미국 국내선 · 약 5시간</div>
+      </div>
+    </div>
+
+    <div class="tl-item leg5">
+      <div class="tl-num">5</div>
+      <div class="tl-content">
+        <div class="tl-date">7.11 SAT → 7.17 FRI · 5박 6일</div>
+        <div class="tl-title">The Venetian Resort 호캉스</div>
+        <div class="tl-meta">🎰 라스베가스 스트립 · 최고급 스위트 리조트</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section legs">
+  <h2 class="section-title">🚢 크루즈 & 도시 상세</h2>
+  <p class="section-subtitle">기항지와 날씨 정보를 확인하세요</p>
+
+  <div class="leg">
+    <div class="leg-header h1">
+      <span class="leg-tag">LEG 1 · 7 DAYS</span>
+      <div class="leg-name">7 Days<br>Mediterranean-West</div>
+      <div class="leg-ship">Royal Caribbean · Harmony of the Seas</div>
+      <div class="leg-dates">
+        <span>📅 <strong>6.7</strong> 일 → <strong>6.14</strong> 일</span>
+      </div>
+    </div>
+    <div class="leg-body">
+      <div class="info-row">
+        <div class="info-label">출발/도착</div>
+        <div class="info-val">바르셀로나 (스페인)</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">기항지</div>
+        <div class="info-val">팔마 데 마요르카 → 마르세유 → 라 스페치아 → 로마 → 나폴리</div>
+      </div>
+
+      <div class="ports-section">
+        <div class="ports-title">📍 기항지 상세</div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">1</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">바르셀로나 · 스페인 🇪🇸</div>
+            <div class="port-date">6월 7일 (일) · EMBARK</div>
+            <span class="port-time">출항 5:00 PM</span>
+            <div class="port-weather">☀️ 평균 22~27°C, 맑고 건조</div>
+            <div class="port-desc">가우디의 도시. 사그라다 파밀리아, 구엘공원, 람블라스 거리가 대표. 출항 전 오전 시내 관광 가능. 항구는 공항에서 20~30분 거리.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">2</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">팔마 데 마요르카 · 스페인 🇪🇸</div>
+            <div class="port-date">6월 8일 (월) · DOCKED</div>
+            <span class="port-time">도착 8:00 AM</span>
+            <span class="port-time">출항 4:00 PM</span>
+            <div class="port-weather">☀️ 평균 20~26°C</div>
+            <div class="port-desc">지중해의 보석. 팔마 대성당(La Seu), 벨베르 성, 올드타운 골목. 항구에서 구시가지까지 도보 20분. 해변 비치 클럽 인기.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">3</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">마르세유 · 프랑스 🇫🇷</div>
+            <div class="port-date">6월 9일 (화) · DOCKED</div>
+            <span class="port-time">도착 9:00 AM</span>
+            <span class="port-time">출항 4:30 PM</span>
+            <div class="port-weather">☀️ 평균 17~24°C, 미스트랄 바람</div>
+            <div class="port-desc">프랑스 남부 최대 항구도시. 비유 포르(옛 항구), 노트르담 드 라 가르드 대성당. 근교 엑상프로방스나 칸 당일치기 가능하나 시간 타이트.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">4</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">라 스페치아 · 이탈리아 🇮🇹</div>
+            <div class="port-date">6월 10일 (수) · TENDERED</div>
+            <span class="port-time">도착 6:30 AM</span>
+            <span class="port-time">출항 8:00 PM</span>
+            <div class="port-weather">☀️ 평균 18~25°C</div>
+            <div class="port-desc"><strong>친퀘테레(Cinque Terre)</strong> 투어 최적지. 다섯 마을 중 몬테로소, 베르나차, 마나롤라 추천. 피사/피렌체 당일치기도 가능 (기차 2시간).</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">5</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">로마/치비타베키아 · 이탈리아 🇮🇹</div>
+            <div class="port-date">6월 11일 (목) · DOCKED</div>
+            <span class="port-time">도착 7:00 AM</span>
+            <span class="port-time">출항 7:00 PM</span>
+            <div class="port-weather">☀️ 평균 18~27°C, 한낮 덥고 건조</div>
+            <div class="port-desc">치비타베키아 항에서 <strong>로마까지 기차 1시간 15분</strong>. 콜로세움, 바티칸, 트레비 분수. 포트 → 역 버스 €3, 기차 편도 €5. 출항 2시간 전 복귀 권장.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">6</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">나폴리 · 이탈리아 🇮🇹</div>
+            <div class="port-date">6월 12일 (금) · DOCKED</div>
+            <span class="port-time">도착 7:00 AM</span>
+            <span class="port-time">출항 7:00 PM</span>
+            <div class="port-weather">☀️ 평균 18~26°C, 맑고 화창</div>
+            <div class="port-desc">피자의 발상지. 폼페이 유적, 카프리 섬, 소렌토, 아말피 해안 당일치기 가능. 항구가 시내 중심에 위치해 접근성 뛰어남.</div>
+          </div>
+        </div>
+
+        <div class="port sea">
+          <div class="port-day"><div class="port-day-num">7</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">Cruising · 항해일 🌊</div>
+            <div class="port-date">6월 13일 (토)</div>
+            <div class="port-desc">선상 휴식일. 콘텐츠 촬영, 선내 시설 탐방 최적.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">8</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">바르셀로나 도착 · 하선</div>
+            <div class="port-date">6월 14일 (일)</div>
+            <div class="port-desc">아침 하선 후 당일 아테네 이동. 직항 약 3시간 비행.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leg">
+    <div class="leg-header h2">
+      <span class="leg-tag">LEG 2 · 10 DAYS</span>
+      <div class="leg-name">10 Days<br>Greece / Turkey</div>
+      <div class="leg-ship">Virgin Voyages · Scarlet Lady</div>
+      <div class="leg-dates">
+        <span>📅 <strong>6.14</strong> 일 → <strong>6.24</strong> 수</span>
+      </div>
+    </div>
+    <div class="leg-body">
+      <div class="info-row">
+        <div class="info-label">출발/도착</div>
+        <div class="info-val">아테네/피레우스 (그리스)</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">기항지</div>
+        <div class="info-val">미코노스 → 보드룸 → 산토리니 → 크레타 → 두브로브니크 → 코토르 → 코르푸</div>
+      </div>
+
+      <div class="ports-section">
+        <div class="ports-title">📍 기항지 상세</div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">1</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">아테네/피레우스 · 그리스 🇬🇷</div>
+            <div class="port-date">6월 14일 (일) · EMBARK</div>
+            <span class="port-time">출항 6:00 PM</span>
+            <div class="port-weather">☀️ 평균 22~30°C, 덥고 건조</div>
+            <div class="port-desc">아크로폴리스, 파르테논 신전. 피레우스 항은 아테네 중심에서 전철 20분.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">2</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">미코노스 · 그리스 🇬🇷</div>
+            <div class="port-date">6월 15일 (월)</div>
+            <span class="port-time">도착 8:00 AM</span>
+            <span class="port-time">출항 11:00 PM ⭐</span>
+            <div class="port-weather">☀️ 평균 21~28°C, 맑고 바람 있음</div>
+            <div class="port-desc">하얀 건물과 풍차의 섬. 리틀 베니스, 파라다이스 비치. 밤 11시 출항이라 저녁까지 즐길 수 있음. 콘텐츠 최적지.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">3</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">보드룸 · 튀르키예 🇹🇷</div>
+            <div class="port-date">6월 16일 (화)</div>
+            <span class="port-time">도착 8:00 AM</span>
+            <span class="port-time">출항 8:00 PM</span>
+            <div class="port-weather">☀️ 평균 22~30°C, 덥고 쾌청</div>
+            <div class="port-desc">'터키의 리비에라'. 보드룸 성, 고대 할리카르나소스 영묘(세계 7대 불가사의). 바자르 쇼핑과 해산물.</div>
+          </div>
+        </div>
+
+        <div class="port highlight">
+          <div class="port-day"><div class="port-day-num">4</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">산토리니/티라 · 그리스 🇬🇷 ⭐</div>
+            <div class="port-date">6월 17일 (수)</div>
+            <span class="port-time">도착 8:00 AM</span>
+            <span class="port-time">출항 8:00 PM</span>
+            <div class="port-weather">☀️ 평균 21~27°C, 바람 많음</div>
+            <div class="port-desc"><strong>최고의 콘텐츠 포인트!</strong> 이아(Oia) 석양, 피라 칼데라 뷰, 블루돔 교회. 텐더 보트 하선. 아침 일찍 이아 가는 것 추천.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">5</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">크레타/하니아 · 그리스 🇬🇷</div>
+            <div class="port-date">6월 18일 (목)</div>
+            <span class="port-time">도착 8:00 AM</span>
+            <span class="port-time">출항 6:00 PM</span>
+            <div class="port-weather">☀️ 평균 22~28°C, 쾌청</div>
+            <div class="port-desc">베네치아풍 항구도시. 올드 베니션 하버, 하니아 등대, 시끌벅적한 시장. 근교 발로스 해변도 유명.</div>
+          </div>
+        </div>
+
+        <div class="port sea">
+          <div class="port-day"><div class="port-day-num">6</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">Cruising · 항해일 🌊</div>
+            <div class="port-date">6월 19일 (금)</div>
+            <div class="port-desc">에게해 → 아드리아해로 이동하는 항해일.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">7</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">두브로브니크 · 크로아티아 🇭🇷</div>
+            <div class="port-date">6월 20일 (토)</div>
+            <span class="port-time">도착 8:00 AM</span>
+            <span class="port-time">출항 10:00 PM ⭐</span>
+            <div class="port-weather">☀️ 평균 19~26°C, 청명</div>
+            <div class="port-desc">'아드리아의 진주'. 중세 성벽 투어, 올드타운, 스르지산 케이블카. 왕좌의 게임 촬영지. 밤 10시 출항으로 야경까지 가능.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">8</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">코토르 · 몬테네그로 🇲🇪</div>
+            <div class="port-date">6월 21일 (일)</div>
+            <span class="port-time">도착 9:00 AM</span>
+            <span class="port-time">출항 6:00 PM</span>
+            <div class="port-weather">☀️ 평균 19~27°C</div>
+            <div class="port-desc">유네스코 세계문화유산. 코토르 올드타운, 성 요한 요새(1,355계단). 피오르 같은 만의 풍광이 독특.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">9</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">코르푸 · 그리스 🇬🇷</div>
+            <div class="port-date">6월 22일 (월)</div>
+            <span class="port-time">도착 9:00 AM</span>
+            <span class="port-time">출항 6:00 PM</span>
+            <div class="port-weather">☀️ 평균 19~27°C</div>
+            <div class="port-desc">이오니아해의 초록 섬. 올드타운(유네스코), 옛 요새, 카노니. 베네치아·프랑스·영국 문화가 섞인 독특한 분위기.</div>
+          </div>
+        </div>
+
+        <div class="port sea">
+          <div class="port-day"><div class="port-day-num">10</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">Cruising · 항해일 🌊</div>
+            <div class="port-date">6월 23일 (화)</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">11</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">아테네 도착 · 하선</div>
+            <div class="port-date">6월 24일 (수)</div>
+            <span class="port-time">도착 6:30 AM</span>
+            <div class="port-desc">이른 아침 하선. 같은 날 오후 다음 크루즈 승선.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leg">
+    <div class="leg-header h3">
+      <span class="leg-tag">LEG 3 · 11 DAYS</span>
+      <div class="leg-name">Istanbul Delights<br>& Santorini Dreams</div>
+      <div class="leg-ship">Virgin Voyages · Scarlet Lady</div>
+      <div class="leg-dates">
+        <span>📅 <strong>6.24</strong> 수 → <strong>7.5</strong> 일</span>
+      </div>
+    </div>
+    <div class="leg-body">
+      <div class="info-row">
+        <div class="info-label">예약번호</div>
+        <div class="info-val">#2436270</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">캐빈</div>
+        <div class="info-val">The Sea Terrace · 2 Sailors</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">출발/도착</div>
+        <div class="info-val">아테네/피레우스 (그리스)</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">기항지</div>
+        <div class="info-val">이스탄불 (오버나잇) → 쿠사다시 → 미코노스 → 크레타 → 로도스 → 산토리니</div>
+      </div>
+
+      <div class="ports-section">
+        <div class="ports-title">📍 기항지 상세</div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">1</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">아테네/피레우스 · EMBARK</div>
+            <div class="port-date">6월 24일 (수)</div>
+            <span class="port-time">출항 6:00 PM</span>
+            <div class="port-weather">☀️ 평균 23~31°C</div>
+            <div class="port-desc">같은 날 아침 전편 하선 → 낮 휴식 → 저녁 승선. 여유 있게 움직일 것.</div>
+          </div>
+        </div>
+
+        <div class="port sea">
+          <div class="port-day"><div class="port-day-num">2</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">Cruising · 항해일 🌊</div>
+            <div class="port-date">6월 25일 (목)</div>
+          </div>
+        </div>
+
+        <div class="port highlight">
+          <div class="port-day"><div class="port-day-num">3-4</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">이스탄불 · 튀르키예 🇹🇷 ⭐오버나잇</div>
+            <div class="port-date">6월 26일 (금) ~ 6월 27일 (토)</div>
+            <span class="port-time">26일 7:00 AM 도착</span>
+            <span class="port-time">27일 6:00 PM 출항</span>
+            <div class="port-weather">☀️ 평균 20~28°C, 맑고 따뜻</div>
+            <div class="port-desc"><strong>하이라이트!</strong> 블루모스크, 아야소피아, 톱카프 궁전, 그랜드 바자르, 갈라타 탑. 보스포러스 크루즈도 인기. 오버나잇이라 밤거리 야경 가능.</div>
+          </div>
+        </div>
+
+        <div class="port sea">
+          <div class="port-day"><div class="port-day-num">5</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">Cruising · 항해일 🌊</div>
+            <div class="port-date">6월 28일 (일)</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">6</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">쿠사다시 · 튀르키예 🇹🇷</div>
+            <div class="port-date">6월 29일 (월)</div>
+            <span class="port-time">도착 8:00 AM</span>
+            <span class="port-time">출항 8:00 PM</span>
+            <div class="port-weather">☀️ 평균 22~31°C, 덥고 쾌청</div>
+            <div class="port-desc">고대 도시 <strong>에페소스(Ephesus)</strong>의 관문. 셀수스 도서관, 대극장, 성모 마리아의 집. 항구에서 20분 거리.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">7</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">미코노스 · 그리스 🇬🇷 (재방문)</div>
+            <div class="port-date">6월 30일 (화)</div>
+            <span class="port-time">도착 8:00 AM</span>
+            <span class="port-time">출항 8:00 PM</span>
+            <div class="port-weather">☀️ 평균 22~29°C</div>
+            <div class="port-desc">Leg 2와 같은 섬이지만 다른 시간대라 또 다른 분위기 촬영 가능.</div>
+          </div>
+        </div>
+
+        <div class="port sea">
+          <div class="port-day"><div class="port-day-num">8</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">Cruising · 항해일 🌊</div>
+            <div class="port-date">7월 1일 (수)</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">9</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">하니아/크레타 · 그리스 🇬🇷</div>
+            <div class="port-date">7월 2일 (목)</div>
+            <span class="port-time">도착 9:00 AM</span>
+            <span class="port-time">출항 6:00 PM</span>
+            <div class="port-weather">☀️ 평균 23~29°C</div>
+            <div class="port-desc">두 번째 방문. 지난번 못 가본 곳 탐방.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">10</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">로도스 · 그리스 🇬🇷</div>
+            <div class="port-date">7월 3일 (금)</div>
+            <span class="port-time">도착 9:00 AM</span>
+            <span class="port-time">출항 6:00 PM</span>
+            <div class="port-weather">☀️ 평균 23~29°C, 맑음</div>
+            <div class="port-desc">기사단의 섬. 중세 올드타운(유네스코), 기사단장의 궁전. 린도스 고대 아크로폴리스도 유명.</div>
+          </div>
+        </div>
+
+        <div class="port highlight">
+          <div class="port-day"><div class="port-day-num">11</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">산토리니/티라 · 그리스 🇬🇷 ⭐ (재방문)</div>
+            <div class="port-date">7월 4일 (토)</div>
+            <span class="port-time">도착 7:00 AM</span>
+            <span class="port-time">출항 7:00 PM</span>
+            <div class="port-weather">☀️ 평균 22~28°C, 맑음</div>
+            <div class="port-desc">두 번째 방문으로 지난번 못 한 코스 시도 가능. 전체 칼데라 워킹, 와인 테이스팅 등.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">12</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">아테네 도착 · 하선</div>
+            <div class="port-date">7월 5일 (일)</div>
+            <span class="port-time">도착 6:30 AM</span>
+            <div class="port-desc">이른 아침 하선 후 뉴욕행 비행.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leg">
+    <div class="leg-header ny">
+      <span class="leg-tag">STOPOVER · 1 DAY</span>
+      <div class="leg-name">🗽 New York City<br>야경 투어</div>
+      <div class="leg-ship">아테네 → 뉴욕(경유) → 마이애미</div>
+      <div class="leg-dates">
+        <span>📅 <strong>7.5</strong> 일 → <strong>7.6</strong> 월</span>
+      </div>
+    </div>
+    <div class="leg-body">
+      <div class="info-row">
+        <div class="info-label">체류</div>
+        <div class="info-val">하루 (오후 도착 ~ 익일 오전 출발)</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">공항</div>
+        <div class="info-val">JFK 또는 EWR</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">날씨</div>
+        <div class="info-val">☀️ 평균 22~30°C, 덥고 습함</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">시차</div>
+        <div class="info-val">그리스 대비 -7시간</div>
+      </div>
+
+      <div class="ports-section">
+        <div class="ports-title">🗽 야경 투어 추천 코스</div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">🌆</div><div class="port-day-lbl">VIEW</div></div>
+          <div class="port-info">
+            <div class="port-name">Top of the Rock</div>
+            <div class="port-desc">록펠러 센터 전망대. 엠파이어 스테이트 빌딩이 정면에 보여 <strong>뉴욕 스카이라인 사진 최적</strong>. 해질녘 예약이 명당.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">🏙️</div><div class="port-day-lbl">HIGH</div></div>
+          <div class="port-info">
+            <div class="port-name">Edge / Summit One Vanderbilt</div>
+            <div class="port-desc"><strong>Edge</strong>: 유리 스카이데크, 허드슨 야드.<br><strong>Summit</strong>: 거울 미러룸 콘텐츠 끝판왕. 두 곳 중 하나 선택.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">🌉</div><div class="port-day-lbl">BRIDGE</div></div>
+          <div class="port-info">
+            <div class="port-name">브루클린 브릿지 야경</div>
+            <div class="port-desc">DUMBO에서 맨해튼 야경 촬영. 브루클린 브릿지 파크가 포토 스팟. 지하철 York St 역.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">🗽</div><div class="port-day-lbl">FERRY</div></div>
+          <div class="port-info">
+            <div class="port-name">스태튼 아일랜드 페리 (야간)</div>
+            <div class="port-desc"><strong>무료!</strong> 자유의 여신상 + 로어 맨해튼 야경. 왕복 50분. 가성비 갑.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">✨</div><div class="port-day-lbl">NITE</div></div>
+          <div class="port-info">
+            <div class="port-name">타임스퀘어 심야</div>
+            <div class="port-desc">네온 가장 화려한 시간. 루프탑 바(230 Fifth 등)도 함께 추천.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">📋</div><div class="port-day-lbl">PLAN</div></div>
+          <div class="port-info">
+            <div class="port-name">하루 동선 추천</div>
+            <div class="port-desc">
+              <strong>오후 도착:</strong> 호텔 체크인 · 짧은 휴식<br>
+              <strong>오후 5-6시:</strong> Top of the Rock 또는 Summit<br>
+              <strong>일몰:</strong> 브루클린 브릿지 / DUMBO<br>
+              <strong>저녁:</strong> 타임스퀘어 + 디너<br>
+              <strong>늦은 밤:</strong> 스태튼 아일랜드 페리 (선택)<br>
+              <strong>다음날 오전:</strong> JFK/EWR → 마이애미
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-row" style="margin-top: 16px; padding-top: 16px; border-top: 2px dashed #e5e7eb;">
+        <div class="info-label">추천호텔</div>
+        <div class="info-val">타임스퀘어 인근 또는 공항 근처 (일정 타이트하면 공항 호텔)</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">이동</div>
+        <div class="info-val">Uber/옐로우캡/지하철. 공항→맨해튼 45분~1시간</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leg">
+    <div class="leg-header h4">
+      <span class="leg-tag">LEG 4 · 5 DAYS</span>
+      <div class="leg-name">Dominican Republic<br>& Bimini Beach Club</div>
+      <div class="leg-ship">Virgin Voyages · Resilient Lady</div>
+      <div class="leg-dates">
+        <span>📅 <strong>7.6</strong> 월 → <strong>7.11</strong> 토</span>
+      </div>
+    </div>
+    <div class="leg-body">
+      <div class="info-row">
+        <div class="info-label">예약번호</div>
+        <div class="info-val">#2485680</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">출발/도착</div>
+        <div class="info-val">마이애미, 플로리다 (미국)</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">포함</div>
+        <div class="info-val">식사 · 엔터테인먼트 · Wi-Fi · 그룹 피트니스 · 소프트드링크</div>
+      </div>
+
+      <div class="ports-section">
+        <div class="ports-title">📍 기항지 상세</div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">1</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">마이애미, 플로리다 · 🇺🇸 · EMBARK</div>
+            <div class="port-date">7월 6일 (월)</div>
+            <span class="port-time">출항 5:00 PM</span>
+            <div class="port-weather">☀️ 평균 26~32°C, 덥고 습함 · 오후 스콜</div>
+            <div class="port-desc">뉴욕 경유 후 당일 승선. 여유 있는 항공 스케줄 권장.</div>
+          </div>
+        </div>
+
+        <div class="port sea">
+          <div class="port-day"><div class="port-day-num">2</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">At Sea · 항해일 🌊</div>
+            <div class="port-date">7월 7일 (화)</div>
+            <div class="port-desc">카리브해 진입. 선상 휴식, 시차 적응 최적일.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">3</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">푸에르토 플라타 · 도미니카공화국 🇩🇴</div>
+            <div class="port-date">7월 8일 (수)</div>
+            <span class="port-time">도착 10:00 AM</span>
+            <div class="port-weather">☀️ 평균 25~31°C, 열대성</div>
+            <div class="port-desc">'호박 해안'. 앰버 박물관, 이사벨 데 토레스 산 케이블카, 플라야 도라다 해변. Virgin 전용 비치데이.</div>
+          </div>
+        </div>
+
+        <div class="port sea">
+          <div class="port-day"><div class="port-day-num">4</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">At Sea · 항해일 🌊</div>
+            <div class="port-date">7월 9일 (목)</div>
+            <div class="port-desc">바하마로 이동.</div>
+          </div>
+        </div>
+
+        <div class="port highlight">
+          <div class="port-day"><div class="port-day-num">5</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">The Beach Club at Bimini · 바하마 🇧🇸 ⭐</div>
+            <div class="port-date">7월 10일 (금)</div>
+            <span class="port-time">도착 9:00 AM</span>
+            <div class="port-weather">☀️ 평균 27~32°C, 청명한 카리브해</div>
+            <div class="port-desc"><strong>Virgin Voyages 프라이빗 비치!</strong> 투명한 바다, 풀 파티, 해먹존, DJ 세트. 콘텐츠 최고 포인트.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">6</div><div class="port-day-lbl">DAY</div></div>
+          <div class="port-info">
+            <div class="port-name">마이애미 도착 · 하선</div>
+            <div class="port-date">7월 11일 (토)</div>
+            <span class="port-time">도착 6:30 AM</span>
+            <div class="port-desc">이른 아침 하선. 같은 날 라스베가스로 국내선 이동 (Leg 5).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leg">
+    <div class="leg-header h5">
+      <span class="leg-tag">LEG 5 · 5박 6일 · 호캉스</span>
+      <div class="leg-name">The Venetian<br>Resort Las Vegas</div>
+      <div class="leg-ship">라스베가스 스트립 · 최고급 스위트 호텔 🇺🇸</div>
+      <div class="leg-dates">
+        <span>📅 <strong>7.11</strong> 토 → <strong>7.17</strong> 금</span>
+      </div>
+    </div>
+    <div class="leg-body">
+      <div class="info-row">
+        <div class="info-label">컨셉</div>
+        <div class="info-val">🎰 이탈리아 베네치아 테마의 아이코닉 리조트 (전 객실 스위트)</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">위치</div>
+        <div class="info-val">3355 S Las Vegas Blvd, Las Vegas, NV 89109 (스트립 한복판)</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">공항</div>
+        <div class="info-val">해리 리드 국제공항 (LAS) 약 14분</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">하이라이트</div>
+        <div class="info-val">곤돌라, 그랜드 캐널 샵스, Sphere 바로 옆</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">날씨</div>
+        <div class="info-val">☀️ 평균 28~40°C, 매우 덥고 건조 (사막 기후)</div>
+      </div>
+
+      <div class="ports-section">
+        <div class="ports-title">🏨 호텔 시설 & 특징</div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">⭐</div><div class="port-day-lbl">ROOM</div></div>
+          <div class="port-info">
+            <div class="port-name">전 객실 스위트</div>
+            <div class="port-desc"><strong>기본 룸도 스위트(650 sqft+)</strong>. 분리된 거실+침실, 로마 욕조 + 별도 샤워. 46인치 TV 2개. Sphere 뷰 또는 시티 뷰 선택 가능.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">🏊</div><div class="port-day-lbl">POOL</div></div>
+          <div class="port-info">
+            <div class="port-name">11개 히팅 풀 (베네시안 + 팔라조)</div>
+            <div class="port-desc">베네시안 4개 · 팔라조 7개 총 <strong>11개 풀</strong>. 2에이커 풀 데크, 카바나(유료), 풀사이드 바 Spritz. 스트립 최대 규모.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">🛶</div><div class="port-day-lbl">ICON</div></div>
+          <div class="port-info">
+            <div class="port-name">곤돌라 & 그랜드 캐널 샵스</div>
+            <div class="port-desc"><strong>베네시안의 상징</strong>. 실내/야외 운하를 따라 곤돌라 라이딩 + 가수가 부르는 이탈리아 노래. 명품 쇼핑몰 직결.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">🍽️</div><div class="port-day-lbl">DINE</div></div>
+          <div class="port-info">
+            <div class="port-name">20+ 레스토랑</div>
+            <div class="port-desc">Wolfgang Puck, Thomas Keller의 Bouchon, 모르몬의 Mott 32, 수시 등. 이탈리안 트라토리아부터 글로벌 cuisine까지.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">🎭</div><div class="port-day-lbl">SHOW</div></div>
+          <div class="port-info">
+            <div class="port-name">엔터테인먼트</div>
+            <div class="port-desc">호텔 내 극장에서 라스베가스 쇼, 콘서트 상시. <strong>Sphere</strong>(세계 최대 구형 공연장)이 도보 거리.</div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port-day"><div class="port-day-num">📅</div><div class="port-day-lbl">PLAN</div></div>
+          <div class="port-info">
+            <div class="port-name">추천 일정 (5박 6일)</div>
+            <div class="port-desc">
+              <strong>Day 1 (7.11 토):</strong> MIA→LAS 비행 · 체크인 · 스트립 야경<br>
+              <strong>Day 2 (7.12 일):</strong> 풀 데이 · 곤돌라 라이딩 · 디너쇼<br>
+              <strong>Day 3 (7.13 월):</strong> Sphere 공연 또는 쇼 관람<br>
+              <strong>Day 4 (7.14 화):</strong> 그랜드 캐년 데이트립 또는 휴식<br>
+              <strong>Day 5 (7.15 수):</strong> 그랜드 캐널 샵스 쇼핑 · 콘텐츠 촬영<br>
+              <strong>Day 6 (7.16 목):</strong> 마지막 호캉스 · 파인 다이닝<br>
+              <strong>Day 7 (7.17 금):</strong> LAS → 한국 귀국
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section free-section">
+  <h2 class="section-title">🧳 이동 일정</h2>
+  <p class="section-subtitle">구간별 항공 이동</p>
+
+  <div class="free-card">
+    <div class="free-header">
+      <div class="free-title">바르셀로나 → 아테네</div>
+      <div class="free-date">6.14 일</div>
+    </div>
+    <div class="free-note">
+      • Leg 1 하선 (바르셀로나, 아침)<br>
+      • 같은 날 아테네 이동 (직항 약 3시간)<br>
+      • Leg 2 출항 6:00 PM 이전 피레우스 도착 필수<br>
+      • 오전 항공편 예약 권장
+    </div>
+  </div>
+
+  <div class="free-card" style="border-color: #f59e0b; background: #fffbeb;">
+    <div class="free-header">
+      <div class="free-title">🗽 아테네 → 뉴욕 → 마이애미</div>
+      <div class="free-date">7.5 일 → 7.6 월</div>
+    </div>
+    <div class="free-note">
+      • Leg 3 하선 (아테네, 7.5 오전 6:30)<br>
+      • <strong>뉴욕 경유 + 1박 야경 투어</strong><br>
+      • 7.5: 아테네 → 뉴욕(JFK/EWR), 오후 도착<br>
+      • 7.5 밤: 뉴욕 야경 투어<br>
+      • 7.6: 뉴욕 → 마이애미 (오전 출발, 약 3시간)<br>
+      • Leg 4 출항 7.6 오후 5:00 이전 도착 필수<br>
+      • 시차: 그리스 → 미국 -7시간
+    </div>
+  </div>
+
+  <div class="free-card">
+    <div class="free-header">
+      <div class="free-title">마이애미 → 라스베가스</div>
+      <div class="free-date">7.11 토</div>
+    </div>
+    <div class="free-note">
+      • Leg 4 하선 (마이애미, 7.11 오전 6:30)<br>
+      • MIA → LAS 국내선 약 5시간 (직항 다수)<br>
+      • 해리 리드 공항에서 The Venetian까지 약 14분<br>
+      • 시차 -3시간 (동부 → 서부)<br>
+      • Uber/택시가 가장 편함 (공항 택시 승강장 바로 앞)
+    </div>
+  </div>
+</section>
+
+<section class="section tips-section">
+  <h2 class="section-title">💡 여행 체크포인트</h2>
+  <p class="section-subtitle">Bella를 위한 핵심 팁</p>
+
+  <div class="tip">
+    <div class="tip-title">📸 콘텐츠 포인트</div>
+    <div class="tip-body">산토리니(이아 석양), 미코노스(리틀 베니스), 두브로브니크(성벽), 이스탄불(블루모스크), 뉴욕(Top of the Rock), Bimini Beach Club, 베네시안 곤돌라 & Sphere가 최고의 촬영지. 산토리니는 두 번 방문하므로 여유있게.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">🧳 짐 전략</div>
+    <div class="tip-body">41일 장기 여정. 지중해(따뜻/건조) → 에게해(덥고 바람) → 뉴욕·카리브(덥고 습함) → 라스베가스(매우 덥고 건조, 40°C). 리넨·얇은 긴팔·수영복·선크림·샌들·드라이어 필수. 얇은 방수 자켓도 챙기기.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">⏰ 시차 & 항공</div>
+    <div class="tip-body">한국 → 바르셀로나 7시간 / 아테네 6시간 / 뉴욕·마이애미 13시간 / 라스베가스 16시간 차이. 모든 이동일 항공권 선점 필수. 크루즈 출항 최소 4시간 전 도착.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">💳 결제 준비</div>
+    <div class="tip-body">유로(Leg 1~3) + 달러(뉴욕·Leg 4·라스베가스) 모두 필요. 튀르키예·크로아티아·몬테네그로는 유로도 잘 받지만 현지화 ATM이 이득. Virgin은 기본 포함 많음(식·Wi-Fi·피트니스·소다).</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">☀️ 날씨 요약</div>
+    <div class="tip-body">6월 지중해 20~27°C · 6월 말~7월 에게해 22~31°C · 7월 뉴욕 22~30°C · 7월 카리브 26~32°C(습함) · 7월 라스베가스 28~40°C(사막, 매우 건조). 자외선 강함 → SPF 50+ 필수.</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">🗽 뉴욕 꿀팁</div>
+    <div class="tip-body">짧은 체류라 동선이 핵심. 타임스퀘어 근처 호텔 = 이동 최소화. 전망대는 해질녘 예약. 지하철은 OMNY(컨택리스 카드) 가능. Uber가 편하지만 맨해튼은 교통체증 심함.</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo">BELLA 2026</div>
+  <div>Summer Voyage · Jun 7 ~ Jul 17</div>
+  <div style="margin-top:10px; font-size:10px; opacity:0.5;">Last updated 2026.4.18</div>
+</footer>
+
+</div>
+</body>
+</html>
